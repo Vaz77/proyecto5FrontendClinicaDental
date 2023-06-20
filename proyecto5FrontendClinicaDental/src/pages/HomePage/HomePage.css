@@ -1,7 +1,12 @@
 
+.general {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
 .encabezado  {
     color: cornflowerblue;
     font-size: 1.5em;
-    height: 50%;
-    width: 100%;
+    text-align: center;
+    padding: 1.5em;
 }

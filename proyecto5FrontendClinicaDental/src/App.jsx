@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage/HomePage'
-import Navbar from './common/Navbar/Navbar'
+import RegisterPage from './pages/RegisterPage/RegisterPage'
 
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
       <h1></h1>
       <Routes>
         <Route path="/"element={<HomePage/>} />
+        <Route path="/register"element={<RegisterPage/>} />
       </Routes>
     </>
   )
