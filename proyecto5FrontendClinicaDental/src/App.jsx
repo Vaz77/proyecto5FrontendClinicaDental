@@ -10,7 +10,7 @@ function App() {
       <h1></h1>
       <Routes>
         <Route path="/"element={<HomePage/>} />
-        <Route path="/register"element={<RegisterPage/>} />
+        <Route path="/registro"element={<RegisterPage/>} />
       </Routes>
     </>
   )

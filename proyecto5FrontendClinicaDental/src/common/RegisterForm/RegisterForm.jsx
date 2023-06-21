@@ -24,7 +24,7 @@ const RegisterForm = () => {
 
     return (
         <form className="register-form" onSubmit={handleSubmit}>
-            <input 
+            <input className="input-register"
             type="text" 
             name="name"
             placeholder="Nombre"
@@ -32,7 +32,7 @@ const RegisterForm = () => {
             onChange={handleInputChange}
             required
             />
-            <input 
+            <input className="input-register"
             type="email" 
             name="email"
             placeholder="Correo electrónico"
@@ -40,7 +40,7 @@ const RegisterForm = () => {
             onChange={handleInputChange}
             required
             />
-            <input 
+            <input className="input-register"
             type="tel" 
             name="phone"
             placeholder="Teléfono"
@@ -48,7 +48,23 @@ const RegisterForm = () => {
             onChange={handleInputChange}
             required
             />
-            <button type="submit">Registrarse</button>
+            <input className="input-register"
+            type="password" 
+            name="password"
+            placeholder="Contraseña,debe contener 6 caracteres mínimo"
+            value={formData.password}
+            onChange={handleInputChange}
+            required
+            />
+            <input className="input-register"
+            type="password" 
+            name="password"
+            placeholder="Vuelve a introducir la contraseña"
+            value={formData.password}
+            onChange={handleInputChange}
+            required
+            />
+            <button type="submit" className="boton-register">Registrarse</button>
         </form>
     )
 
