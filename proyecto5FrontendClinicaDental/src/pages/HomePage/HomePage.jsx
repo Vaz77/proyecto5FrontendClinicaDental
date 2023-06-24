@@ -1,11 +1,9 @@
-import '../HomePage/HomePage.css';
 import React from 'react';
-import Navbar from '../../common/Navbar/Navbar';
+import './HomePage.css';
 
 const HomePage = () => {
     return ( 
         <div className='general'>
-        <Navbar />
         <h1 className="encabezado">Bienvenidos a nuestra clínica dental</h1>
         </div>
     )
