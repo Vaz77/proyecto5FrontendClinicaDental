@@ -1,17 +1,17 @@
-.register-form {
+.login-form {
     display: flex;
     flex-direction: column;
 }
 
-.boton-register {
+.boton-login {
     margin: 1em;
 }
 
-.boton-register:hover {
+.boton-login:hover {
     transition: 0.3s;
 }
 
-.input-register {
+.input-login {
     margin: 0.6em;
     width: 22em;
 }
