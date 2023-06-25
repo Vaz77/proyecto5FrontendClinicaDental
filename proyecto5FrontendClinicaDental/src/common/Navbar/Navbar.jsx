@@ -17,11 +17,11 @@ const CustomNavbar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto justify-content-end">
             <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="/registro">Registro</Nav.Link>
             <Nav.Link href="/login">Inicio de sesión</Nav.Link>
-            <NavDropdown title="Menú" id="basic-nav-dropdown">
+            <NavDropdown title="Menú" id="basic-nav-dropdown" className='ml-auto'>
                 <NavDropdown.Item href="#action/3.1">Citas Online</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                 Servicios

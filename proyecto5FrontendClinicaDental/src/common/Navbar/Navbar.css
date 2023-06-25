@@ -24,3 +24,8 @@
     margin-right: 0.5em; 
     border-radius: 50%;
 }
+
+.me-auto {
+    display: flex;
+    justify-content: flex-end;
+}

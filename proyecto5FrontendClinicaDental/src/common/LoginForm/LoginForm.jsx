@@ -14,12 +14,11 @@ const LoginForm = () => {
         }));
     };
 
-
 const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
 };
-
+    
 return (
     <form className = "login-form" onSubmit={handleSubmit}>
         <input 
