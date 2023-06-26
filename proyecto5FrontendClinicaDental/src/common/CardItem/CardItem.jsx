@@ -10,7 +10,7 @@ const CardItem = ({ title, imageSrc, description, updateAt }) => {
                 <Card.Text>{description}</Card.Text>
             </Card.Body>
             <Card.Footer>
-                <small className="text-muted">Last updated {updateAt}</small>
+                <button>Saber más</button>
             </Card.Footer>
         </Card>
     )

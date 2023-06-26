@@ -19,18 +19,21 @@ const HomePage = () => {
             imageSrc={cardImage}
             description="This is the description for card 1"
             updateAt="3 mins ago"
+            className="card-item"
         />
         <CardItem
             title="Implante"
             imageSrc={cardImage2}
             description="This is the description for card 2"
             updateAt="3 mins ago"
+            className="card-item"
         />
         <CardItem
             title="Periodontitis"
             imageSrc={cardImage3}
             description="This is the description for card 3"
             updateAt="3 mins ago"
+            className="card-item"
         />
         </div>
         </div>
