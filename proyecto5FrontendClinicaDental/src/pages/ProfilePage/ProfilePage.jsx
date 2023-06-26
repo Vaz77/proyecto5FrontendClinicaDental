@@ -6,7 +6,6 @@ const ProfilePage = () => {
     return (
     <div className="profile-page">
         <h1>Perfil de usuario</h1>
-        <CustomNavbar />
         <ProfileForm />
     </div>
     );

@@ -23,12 +23,12 @@ const CustomNavbar = () => {
             <Nav.Link href="/login">Inicio de sesión</Nav.Link>
             <NavDropdown title="Menú" id="basic-nav-dropdown" className='ml-auto'>
                 <NavDropdown.Item href="#action/3.1">Citas Online</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item href="/servicios">
                 Servicios
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Opiniones</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/perfil">
                 Separated link
                 </NavDropdown.Item>
             </NavDropdown>
