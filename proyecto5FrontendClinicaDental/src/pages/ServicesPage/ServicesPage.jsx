@@ -5,7 +5,7 @@ import './ServicesPage.css';
 const ServicesPage = () => {
     return (
         <div className="services-page">
-            <h1>Servicios</h1>
+            <h1 className="textoServicios">Tratamientos</h1>
         </div>
     )
 }

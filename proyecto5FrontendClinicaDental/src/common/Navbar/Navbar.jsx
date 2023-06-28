@@ -15,7 +15,7 @@ const CustomNavbar = () => {
     <Navbar expand="lg" bg="" variant="dark">
         <div className='container-fluid'>
         <Nav.Link as={NavLink} to='/' exact> 
-        <img src={logo} alt="Logo" className="logo" />Clínica Dental 
+        <img src={logo} alt="Logo" className="logo" /><h5 className='textoLogo'>DentaLife </h5>
         </Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

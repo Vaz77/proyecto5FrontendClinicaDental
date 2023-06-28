@@ -30,3 +30,15 @@
     justify-content: flex-end;
     margin-left: 34em;
 }
+
+.textoLogo {
+    margin-left: 0.5em;
+    color: white;
+}
+
+.container-fluid {
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: lightseagreen;
+  }
