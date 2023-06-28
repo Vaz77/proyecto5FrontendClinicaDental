@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { Nav } from 'react-bootstrap';
 import { Row, Col } from 'react-bootstrap';
 import './HomePage.css';
 import CardItem from '../../common/CardItem/CardItem';
@@ -14,6 +16,8 @@ import especialista from '../../assets/especialistas.jpg';
 import primeraCita from '../../assets/primeraCita.jpg';
 import financiacion from '../../assets/financiacion.jpg';
 import ControlledCarousel from '../../common/ControlledCarousel/ControlledCarousel';
+
+
 
 const HomePage = () => {
     return (
@@ -54,7 +58,7 @@ const HomePage = () => {
                 <Col md={4} className='info-columnTratamientos'>
                     <img className='info-imageTratamientos' src={cardImage3} alt="Imagen 1" />
                     <div className='info-textTratamientos'>
-                        <h3>Ortodoncia</h3>
+                    <Nav.Link as={NavLink} to='/servicios' exact> <h3>Ortodoncia</h3> </Nav.Link>
                         <p>Sonrisa perfecta y salud dental. Corrige problemas y mejora tu bienestar bucal</p>
                     </div>
                 </Col>

@@ -1,5 +1,6 @@
 import React from 'react';
 import ProfileForm from '../../common/ProfileForm/ProfileForm';
+import './ProfilePage.css'
 import CustomNavbar from '../../common/Navbar/Navbar';
 
 const ProfilePage = () => {

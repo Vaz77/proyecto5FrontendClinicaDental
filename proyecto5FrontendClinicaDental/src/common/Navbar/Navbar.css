@@ -1,8 +1,6 @@
 .CustomNavbar {
     background-color: rgb(255, 255, 255);
-    padding: 1rem;
-    width: 100%;
-    position: fixed;
+    width: 98%;
     top: 0;
     left: 0;
 }
@@ -20,12 +18,15 @@
 }
 
 .logo {
-    height: 4em;
+    height: 5em;
     margin-right: 0.5em; 
     border-radius: 50%;
+    margin-left: 1em;
+    margin-bottom: 1em;
 }
 
-.me-auto {
+.linksNavbar {
     display: flex;
     justify-content: flex-end;
+    margin-left: 34em;
 }

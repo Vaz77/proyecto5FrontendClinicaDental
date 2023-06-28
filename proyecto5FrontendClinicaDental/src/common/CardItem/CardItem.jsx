@@ -16,5 +16,4 @@ const CardItem = ({ title, imageSrc, description, updateAt }) => {
     )
 }
 
-
 export default CardItem;
