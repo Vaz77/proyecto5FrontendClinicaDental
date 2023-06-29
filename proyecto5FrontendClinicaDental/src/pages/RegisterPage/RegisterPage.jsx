@@ -1,21 +1,4 @@
-/*
-import React from 'react';
-import RegisterForm from '../../common/RegisterForm/RegisterForm';
-import '../../common/RegisterForm/RegisterForm.css'
-import './RegisterPage.css'
 
-
-const RegisterPage = () => {
-return (
-    <div className='formulario-registro'>
-    <h1 className='encabezado-registro'>Registro</h1>
-    <RegisterForm />
-    </div>
-);
-};
-
-export default RegisterPage;
-*/
 import React from "react";
 import jwtDecode from "jwt-decode";
 import { useState } from "react"
@@ -34,6 +17,7 @@ export const RegisterPage = () => {
         name: "",
         email: "",
         password: "",
+        userType: "doctor",
     });
 
 
@@ -52,14 +36,17 @@ const inputHandler = ({ target }) => {
         e.preventDefault()
         registerUser(body)
         .then(res => {
-            let decoded = jwtDecode(res)
-            dispatch(
-                register({
-                    token: res,
-                    name: decoded.name,
-                    role: decoded.rol
-                })
-            );
+            
+            // let decoded = jwtDecode(res)
+            
+            // dispatch(
+            //     register({
+            //         token: res,
+            //         name: decoded.name,
+            //         role: decoded.rol
+            //     })
+            // );
+            
             navigate("/")
         })
     }
@@ -75,7 +62,7 @@ const inputHandler = ({ target }) => {
             <Form>
             <Form.Group
                 className="mb-3"
-                controlId="formBasicPassword"
+                controlId="formBasicName"
                 >
                 <Form.Label>Name</Form.Label>
                 <Form.Control
