@@ -34,9 +34,19 @@ export const userSlice = createSlice({
         },
       };
     },
+    register: (state, action) => {
+      let { payload } = action;
+      (state.credentials = {
+        token: payload.token,
+      }),
+        (state.data = {
+          name: payload.name,
+          role: payload.role,
+        });
+    },
   },
 });
 
 export const userData = (state) => state.user;
-export const { login, logout } = userSlice.actions;
+export const { login, logout, register } = userSlice.actions;
 export default userSlice.reducer;
