@@ -1,15 +1,47 @@
-import React from 'react';
-import ProfileForm from '../../common/ProfileForm/ProfileForm';
-import './ProfilePage.css'
-import CustomNavbar from '../../common/Navbar/Navbar';
+import React, { useState, useEffect } from "react";
+import { fetchUserData } from '../../services/apiCalls';
+import { useSelector } from "react-redux";
+import { userData } from "../userSlice";
 
-const ProfilePage = () => {
+const UserProfile = () => {
+    const [user, setUser] = useState(null);
+    const { credentials } = useSelector(userData)
+
+    useEffect(() => {
+        const getUserData = async () => {
+            try {
+                const userData = await fetchUserData(credentials.token);
+                setUser(userData);
+            } catch (error) {
+                console.error('Error al obtener los datos del usuario:', error);
+            }
+        };
+        getUserData();
+    }, []);
+
     return (
-    <div className="profile-page">
-        <h1>Perfil de usuario</h1>
-        <ProfileForm />
-    </div>
+        <div>
+            {user ? (
+                <div>
+                    <h2>Perfil de Usuario</h2>
+                    <p>Nombre: {user.name}</p>
+                    <p>Apellidos: {user.surname}</p>
+                    <p>Teléfono: {user.phone}</p>
+                    <p>Correo electrónico: {user.email}</p>
+                </div>
+            ) : (
+                <p>Cargando datos del usuario...</p>
+            )}
+        </div>
     );
 };
 
-export default ProfilePage;
+export default UserProfile;
+
+
+
+
+
+
+
+

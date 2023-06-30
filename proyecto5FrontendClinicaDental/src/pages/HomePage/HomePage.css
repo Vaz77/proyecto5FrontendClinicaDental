@@ -92,8 +92,9 @@
     height: 3em;
 }
 
-.infoTratamientos {
+    .infoTratamientos {
         margin:5em;
+        color: white;
     }
     
     .info-columnTratamientos {
@@ -116,3 +117,5 @@
     .info-textTratamientos {
         color: black;
     }
+
+

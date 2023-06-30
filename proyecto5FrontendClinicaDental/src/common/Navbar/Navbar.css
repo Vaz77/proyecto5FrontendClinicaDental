@@ -41,4 +41,29 @@
     margin: 0 auto;
     padding: 1rem;
     background-color: lightseagreen;
-  }
+}
+
+.inicio, .registro, .iniciarSesion, .menu {
+    margin: 1em;
+    color: white;
+}
+
+.inicio:hover {
+    transition: 1s;
+    color: rgb(14, 114, 133);
+}
+
+.registro:hover {
+    transition: 1s;
+    color: rgb(14, 114, 133);
+}
+
+.iniciarSesion:hover {
+    transition: 1s;
+    color: rgb(14, 114, 133);
+}
+
+.dropdown {
+    margin: 0.6em;
+}
+

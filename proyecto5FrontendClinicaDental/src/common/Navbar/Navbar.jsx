@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import './Navbar.css';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -12,22 +11,22 @@ const CustomNavbar = () => {
     return (
     <Navbar expand="lg" bg="" variant="dark">
         <div className='container-fluid'>
-        <Nav.Link as={NavLink} to='/' > 
+        <NavLink as={NavLink} to='/' exact="true"> 
         <img src={logo} alt="Logo" className="logo" /><h5 className='textoLogo'>DentaLife </h5>
-        </Nav.Link>
+        </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" >
             <Nav className="linksNavbar">
-            <Nav.Link as={NavLink} to='/' > <h5>Inicio</h5> </Nav.Link>
-            <Nav.Link as={NavLink} to='/registro' > <h5>Registro</h5> </Nav.Link>
-            <Nav.Link as={NavLink} to='/login' > <h5>Iniciar sesión</h5> </Nav.Link>
-            <NavDropdown title="Menú" id="basic-nav-dropdown" className='ml-auto'>
-                <NavDropdown.Item href="#action/3.1">Citas Online</NavDropdown.Item>
-                <NavDropdown.Item as={NavLink} to='/servicios' > <h6>Tratamientos</h6>
+            <NavLink as={NavLink} to='/' exact="true" className="inicio"> <h5>Inicio</h5> </NavLink>
+            <NavLink as={NavLink} to='/registro' exact="true" className="registro"> <h5>Registro</h5> </NavLink>
+            <NavLink as={NavLink} to='/login' exact="true" className="iniciarSesion"> <h5>Iniciar sesión</h5> </NavLink>
+            <NavDropdown title="Menú" id="basic-nav-dropdown" className='dropdown'>
+                <NavDropdown.Item href="#action/3.1" className="">Citas Online</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to='/servicios' exact="true"> <h6>Tratamientos</h6>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Opiniones</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={NavLink} to='/perfil' > <h6>Perfil de usuario</h6>
+                <NavDropdown.Item as={NavLink} to='/perfil' exact="true"> <h6>Perfil de usuario</h6>
                 </NavDropdown.Item>
             </NavDropdown>
             </Nav>

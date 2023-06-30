@@ -17,7 +17,6 @@ export const RegisterPage = () => {
         name: "",
         email: "",
         password: "",
-        userType: "doctor",
     });
 
 
