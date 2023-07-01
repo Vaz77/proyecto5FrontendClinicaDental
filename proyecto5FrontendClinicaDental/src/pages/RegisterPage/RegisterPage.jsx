@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import jwtDecode from "jwt-decode";
 import { useState } from "react"
@@ -15,8 +16,11 @@ import { useNavigate } from "react-router-dom";
 export const RegisterPage = () => {
     const [user, setUser] = useState({
         name: "",
+        surname: "",
         email: "",
         password: "",
+        phone: "",
+        userType: "patient",
     });
 
 
@@ -63,11 +67,23 @@ const inputHandler = ({ target }) => {
                 className="mb-3"
                 controlId="formBasicName"
                 >
-                <Form.Label>Name</Form.Label>
+                <Form.Label>Nombre</Form.Label>
                 <Form.Control
                     type="name"
                     name="name"
-                    placeholder="Enter name"
+                    placeholder="Introduce tu nombre"
+                    onChange={(e)=>{inputHandler(e)}}
+                />
+                </Form.Group>
+                <Form.Group
+                className="mb-3"
+                controlId="formBasicSurname"
+                >
+                <Form.Label>Apellidos</Form.Label>
+                <Form.Control
+                    type="surname"
+                    name="surname"
+                    placeholder="Introduce tus apellidos"
                     onChange={(e)=>{inputHandler(e)}}
                 />
                 </Form.Group>
@@ -75,11 +91,11 @@ const inputHandler = ({ target }) => {
                 className="mb-3"
                 controlId="formBasicEmail"
                 >
-                <Form.Label>Email address</Form.Label>
+                <Form.Label>Correo eléctronico</Form.Label>
                 <Form.Control
                     type="email"
                     name="email"
-                    placeholder="Enter email"
+                    placeholder="Correo eléctronico"
                     onChange={(e)=>{inputHandler(e)}}
                 />
                 </Form.Group>
@@ -88,11 +104,23 @@ const inputHandler = ({ target }) => {
                 className="mb-3"
                 controlId="formBasicPassword"
                 >
-                <Form.Label>Password</Form.Label>
+                <Form.Label>Contraseña</Form.Label>
                 <Form.Control
                     type="password"
                     name="password"
-                    placeholder="Password"
+                    placeholder="Contraseña"
+                    onChange={(e)=>{inputHandler(e)}}
+                />
+                </Form.Group>
+                <Form.Group
+                className="mb-3"
+                controlId="formBasicPhone"
+                >
+                <Form.Label>Teléfono</Form.Label>
+                <Form.Control
+                    type="phone"
+                    name="phone"
+                    placeholder="Teléfono"
                     onChange={(e)=>{inputHandler(e)}}
                 />
                 </Form.Group>
@@ -101,7 +129,7 @@ const inputHandler = ({ target }) => {
                 type="submit"
                 onClick={(e)=>{submitHandler(e, user)}}
                 >
-                Enviar
+                Registrar
                 </Button>
             </Form>
             </Col>

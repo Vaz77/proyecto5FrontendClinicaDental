@@ -1,6 +1,6 @@
 .CustomNavbar {
     background-color: rgb(255, 255, 255);
-    width: 98%;
+    width: 100%;
     top: 0;
     left: 0;
 }
@@ -28,7 +28,7 @@
 .linksNavbar {
     display: flex;
     justify-content: flex-end;
-    margin-left: 34em;
+    margin-left: 10em;
 }
 
 .textoLogo {

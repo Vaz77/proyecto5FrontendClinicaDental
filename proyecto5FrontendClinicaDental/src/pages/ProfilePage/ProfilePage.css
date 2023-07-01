@@ -11,3 +11,49 @@
     background-size: cover;
     background-position: center;
 }
+
+.cardProfile {
+    background-color: rgb(90, 217, 210);
+    height: 15em;
+    width: 30em;
+    border: solid 0.15em black;
+}
+
+.cardGeneralProfile {
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+    
+}
+
+.fotoProfile {
+    border: solid 0.15em black;
+    border-radius: 25%;
+    background-color: rgb(255, 255, 255);
+    width: 6em;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoProfileGeneral{
+    display: flex;
+    justify-content: center;
+}
+
+.titleCard {
+    display: flex;
+    justify-content: center;
+}
+
+.textoProfile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cargandoUsuario {
+    display: flex;
+    justify-content: center;
+    margin-top: 17em;
+}

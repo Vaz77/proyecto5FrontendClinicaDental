@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { fetchUserData } from '../../services/apiCalls';
 import { useSelector } from "react-redux";
 import { userData } from "../userSlice";
+import './ProfilePage.css';
 
 const UserProfile = () => {
     const [user, setUser] = useState(null);
@@ -22,22 +23,30 @@ const UserProfile = () => {
     return (
         <div>
             {user ? (
-                <div>
+                <div className="cardGeneralProfile">
+                <div className="cardProfile">
+                    <div className="titleCard">
                     <h2>Perfil de Usuario</h2>
+                    </div>
+                    <div className="fotoProfileGeneral">
+                    <div className="fotoProfile"></div>
+                    </div>
+                    <div className="textoProfile">
                     <p>Nombre: {user.name}</p>
                     <p>Apellidos: {user.surname}</p>
                     <p>Teléfono: {user.phone}</p>
                     <p>Correo electrónico: {user.email}</p>
+                    </div>
+                </div>
                 </div>
             ) : (
-                <p>Cargando datos del usuario...</p>
+                <p className="cargandoUsuario">Cargando datos del usuario...</p>
             )}
         </div>
     );
 };
 
 export default UserProfile;
-
 
 
 
