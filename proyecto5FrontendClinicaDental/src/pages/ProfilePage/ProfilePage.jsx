@@ -68,7 +68,7 @@ const UserProfile = () => {
                 <p>Teléfono: {user.phone}</p>
                 <p>Correo electrónico: {user.email}</p>
             </div>
-            <Button variant="primary" onClick={handleShowModal}>
+            <Button variant="primary" onClick={handleShowModal} className="botonModificarProfile">
                 Modificar
             </Button>
             </div>

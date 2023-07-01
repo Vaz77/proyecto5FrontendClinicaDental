@@ -7,6 +7,7 @@ import RegisterPage from './pages/RegisterPage/RegisterPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import ServicesPage from './pages/ServicesPage/ServicesPage';
+import OnlineAppointment from './pages/OnlineAppointment/OnlineAppointment';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login"element={<LoginPage/>} />
         <Route path="/perfil" element={<ProfilePage />} />
         <Route path="/servicios" element={<ServicesPage />} />
+        <Route path="/citasOnline" element={<OnlineAppointment />} />
       </Routes>
     </>
   )

@@ -14,7 +14,7 @@
 
 .cardProfile {
     background-color: rgb(90, 217, 210);
-    height: 15em;
+    height: 16em;
     width: 30em;
     border: solid 0.15em black;
 }
@@ -56,4 +56,13 @@
     display: flex;
     justify-content: center;
     margin-top: 17em;
+}
+
+.botonModificarProfile {
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12em;
 }
