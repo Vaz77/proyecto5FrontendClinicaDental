@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 
+
 export const loginUser = async (body) => {
     let res = await axios.post('http://localhost:3000/auth/login', body)
     return res.data.token
@@ -30,3 +31,18 @@ export const fetchUserData = async (token) => {
     console.error('Error al obtener los datos del usuario:', error);
     }
 };
+
+export const updateUserData = async (token, userData) => {
+    try {
+      const response = await axios.put('http://localhost:3000/profile', userData, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Error al actualizar los datos del usuario:', error);
+      throw error;
+    }
+  };
+  
