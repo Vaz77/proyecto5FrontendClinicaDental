@@ -8,6 +8,7 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import ServicesPage from './pages/ServicesPage/ServicesPage';
 import OnlineAppointment from './pages/OnlineAppointment/OnlineAppointment';
+import UpdateAppointments from './pages/UpdateAppointments/UpdateAppointments';
 
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
         <Route path="/perfil" element={<ProfilePage />} />
         <Route path="/servicios" element={<ServicesPage />} />
         <Route path="/citasOnline" element={<OnlineAppointment />} />
+        <Route path="/updateAppointments" element={<UpdateAppointments />} />
+
+
       </Routes>
     </>
   )

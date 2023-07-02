@@ -4,6 +4,10 @@ import './OnlineAppointment.css';
 import { createAppointment  } from '../../services/apiCalls';
 import { useSelector } from 'react-redux';
 import { userData } from '../userSlice';
+import { Link } from 'react-router-dom';
+import UpdateAppointments from '../UpdateAppointments/UpdateAppointments';
+
+
 
 
 const OnlineAppointment = () => {
@@ -105,10 +109,17 @@ const OnlineAppointment = () => {
             required
             />
         </Form.Group>
-
+        <div className='botones'>
         <Button variant="primary" type="submit" className='boton'>
             Solicitar
         </Button>
+        <Link to="/updateAppointments">
+    <Button variant="primary" className='boton2'>
+        Modificar Cita
+    </Button>
+</Link>
+
+        </div>
         </Form>
     </div>
     );
