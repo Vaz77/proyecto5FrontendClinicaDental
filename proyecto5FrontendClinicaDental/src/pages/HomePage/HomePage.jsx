@@ -16,6 +16,7 @@ import especialista from '../../assets/especialistas.jpg';
 import primeraCita from '../../assets/primeraCita.jpg';
 import financiacion from '../../assets/financiacion.jpg';
 import ControlledCarousel from '../../common/ControlledCarousel/ControlledCarousel';
+import Footer from '../../common/Footer/Footer';
 
 
 
@@ -113,7 +114,9 @@ const HomePage = () => {
                 </Col>
             </Row>
             </div>
+            <Footer />
         </div>
+        
         </div>
     );
     };

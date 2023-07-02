@@ -1,0 +1,23 @@
+.online-appointment-container {
+    border: solid 0.2em black;
+    width: 40%;
+    display: flex;
+
+}
+
+.textoCita {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.textoCabecera {
+    display: flex;
+    justify-content: center;
+}
+
+
+.boton  {
+    display: flex;
+    align-items: center;
+}
