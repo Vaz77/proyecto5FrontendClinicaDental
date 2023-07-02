@@ -122,6 +122,7 @@
         height: 24em;
         width: 24em;
         margin: 1em;
+        color: black;
     }
     
     .info-imageTratamientos {
@@ -140,4 +141,34 @@
         color: black;
     }
 
+
+    .protesis, .ortodoncia, .implante, .estetica, .pediatria, .periodoncia, .endodoncia, .cirugia {
+        color: black;
+        transition: 1s;
+    }
+
+    .protesis:hover {
+        color: lightseagreen;
+    }
+    .ortodoncia:hover {
+        color: lightseagreen;
+    }
+    .implante:hover {
+        color: lightseagreen;
+    }
+    .estetica:hover {
+        color: lightseagreen;
+    }
+    .pediatria:hover {
+        color: lightseagreen;
+    }
+    .periodoncia:hover {
+        color: lightseagreen;
+    }
+    .endodoncia:hover {
+        color: lightseagreen;
+    }
+    .cirugia:hover {
+        color: lightseagreen;
+    }
 

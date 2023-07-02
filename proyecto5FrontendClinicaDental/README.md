@@ -8,9 +8,6 @@
     <li><a href="#funcionalidades-implementadas">Funcionalidades implementadas</a></li>
     <li><a href="#funcionalidades-en-desarrollo">Funcionalidades en desarrollo</a></li>
         <li><a href="#agradecimientos">Agradecimientos</a></li>
-
-
-
   </ol>
 </details>
 
@@ -27,18 +24,18 @@ Las tecnologías utilizadas en el desarrollo de este proyecto son:
 - React Bootstrap
 - Redux (para el manejo del estado)
 - Axios (para realizar peticiones HTTP)
+- Vite
 
 ## Estructura del proyecto
 
 El proyecto sigue la siguiente estructura de carpetas:
 
-- src/components: Contiene los componentes reutilizables utilizados en diferentes partes de la aplicación.
+- src/common: Contiene los componentes reutilizables utilizados en diferentes partes de la aplicación.
 - src/pages: Contiene las páginas principales de la aplicación, cada una correspondiente a una ruta específica.
 - src/services: Contiene los servicios para realizar peticiones HTTP al backend.
 - src/redux: Contiene la configuración de Redux, incluyendo acciones, reducers y el store.
-- src/routes: Contiene la configuración de las rutas utilizando React Router.
-- src/App.js: Componente principal que define la estructura general de la aplicación.
-- src/index.js: Punto de entrada de la aplicación.
+- src/App.jsx: Contiene la configuración de las rutas utilizando React Router Dom.
+- src/Main.jsx: Punto de entrada de la aplicación.
 
 ## Funcionalidades implementadas
 Las siguientes funcionalidades han sido implementadas hasta el momento:
