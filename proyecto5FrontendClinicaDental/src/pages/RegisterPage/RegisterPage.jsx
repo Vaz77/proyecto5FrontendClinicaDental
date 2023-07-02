@@ -56,7 +56,8 @@ const inputHandler = ({ target }) => {
 
     return (
         <>
-        <Container>
+        <div className="general">
+        <Container className="formulario">
         <Row className="justify-content-center m-5">
             <Col
             xs={10}
@@ -135,6 +136,7 @@ const inputHandler = ({ target }) => {
             </Col>
         </Row>
         </Container>
+        </div>
     </>
     );
 };

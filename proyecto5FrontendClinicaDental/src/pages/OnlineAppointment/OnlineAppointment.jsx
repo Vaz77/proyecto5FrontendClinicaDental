@@ -62,10 +62,10 @@ const OnlineAppointment = () => {
         }
         };
     return (
+        <div className='general'>
     <div className="online-appointment-container">
-        <div className='textoCabecera'>
-        <h2 className='textoCita'>Solicitar Cita Online</h2>
-        </div>
+            <div className='textoCita'>
+        <h2 >Pedir Cita Online</h2>
         <Form onSubmit={handleSubmit}>
         <Form.Group controlId="time">
             <Form.Label>Hora</Form.Label>
@@ -115,12 +115,13 @@ const OnlineAppointment = () => {
         </Button>
         <Link to="/updateAppointments">
     <Button variant="primary" className='boton2'>
-        Modificar Cita
+        Ver todas mis citas
     </Button>
 </Link>
-
         </div>
         </Form>
+        </div>
+    </div>
     </div>
     );
 };

@@ -1,3 +1,10 @@
+.general {
+    background-image: url(../../assets/fondo2.jpeg);
+    background-size: cover;
+    width: 100%;
+
+}
+
 .formulario-registro {
     display: flex;
     flex-direction: column;
@@ -15,4 +22,9 @@
     color: #00ceb9;
     margin-top: 2rem;
     text-align: center;
+}
+
+.formulario{
+    border: solid 0.3em white;
+    border-radius: 1em 0em 1em 0em;
 }

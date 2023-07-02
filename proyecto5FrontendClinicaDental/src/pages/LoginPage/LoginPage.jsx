@@ -45,7 +45,8 @@ export const LoginPage = () => {
     
     return (
     <>
-        <Container>
+    <div className="general">
+        <Container className="formulario">
         <Row className="justify-content-center m-5">
             <Col
             xs={10}
@@ -88,6 +89,7 @@ export const LoginPage = () => {
             </Col>
         </Row>
         </Container>
+        </div>
     </>
     );
 };

@@ -39,7 +39,7 @@ const HomePage = () => {
                 <Col md={4} className='info-column'>
                     <img className='info-image' src={primeraCita} alt="Imagen 2" />
                     <div className='info-text'>
-                        <h3>Citas Online</h3>
+                    <NavLink as={NavLink} to='/citasOnline' exact="true" className="citasOnline"> <h3>Pedir Cita Online</h3> </NavLink>
                         <p>Comodidad y conveniencia en tu cuidado dental. Recomendamos aprovechar las citas virtuales para consultas y seguimiento, ahorrando tiempo y desplazamientos. Obtén atención personalizada desde la comodidad de tu hogar y mantén tu salud bucal al día. ¡Programa tu cita online hoy mismo!</p>
                     </div>
                 </Col>

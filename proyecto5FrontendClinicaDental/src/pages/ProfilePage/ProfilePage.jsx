@@ -52,7 +52,7 @@ const UserProfile = () => {
     };
 
     return (
-    <div>
+    <div className="general">
         {user ? (
         <div className="cardGeneralProfile">
             <div className="cardProfile">

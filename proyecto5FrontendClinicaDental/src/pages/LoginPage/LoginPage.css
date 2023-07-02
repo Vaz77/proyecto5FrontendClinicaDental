@@ -1,0 +1,12 @@
+.general {
+    background-image: url(../../assets/fondo2.jpeg);
+    background-size: cover;
+    width: 100%;
+
+}
+
+.formulario{
+    border: solid 0.3em white;
+    margin-top: -10em;
+    border-radius: 1em 0em 1em 0em;
+}

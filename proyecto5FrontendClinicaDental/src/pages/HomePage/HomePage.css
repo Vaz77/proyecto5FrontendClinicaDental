@@ -64,6 +64,15 @@
     text-align: center;
 }
 
+.citasOnline {
+    color: black;
+    transition: 1s;
+}
+
+.citasOnline:hover{
+    color: lightseagreen;
+}
+
 .info-image {
     width: 100%;
     max-width: 700px;
