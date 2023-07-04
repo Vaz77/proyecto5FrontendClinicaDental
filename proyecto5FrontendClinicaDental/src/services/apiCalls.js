@@ -117,6 +117,18 @@ export const updateAppointment = async (token, appointmentData) => {
       throw error;
     }
   };
+
+
+export const fetchAllUsers = async () => {
+  try {
+    const response = await axios.get("http://localhost:3000/clients");
+    return response.data;
+  } catch (error) {
+    console.error("Error al obtener los usuarios:", error);
+    throw error;
+  }
+};
+
   
   
   

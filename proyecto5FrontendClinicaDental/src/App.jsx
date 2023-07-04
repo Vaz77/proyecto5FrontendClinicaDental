@@ -10,6 +10,7 @@ import ServicesPage from './pages/ServicesPage/ServicesPage';
 import OnlineAppointment from './pages/OnlineAppointment/OnlineAppointment';
 import UpdateAppointments from './pages/UpdateAppointments/UpdateAppointments';
 import DoctorAppointments from './pages/DoctorAppointments/DoctorAppointments';
+import AllUsers from './pages/AllUsers/AllUsers';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/citasOnline" element={<OnlineAppointment />} />
         <Route path="/updateAppointments" element={<UpdateAppointments />} />
         <Route path="/doctorAppointments" element={<DoctorAppointments />} />
+        <Route path="/allUsers" element={<AllUsers />} />
 
 
 
