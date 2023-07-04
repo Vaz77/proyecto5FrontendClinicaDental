@@ -9,6 +9,7 @@ import ProfilePage from './pages/ProfilePage/ProfilePage';
 import ServicesPage from './pages/ServicesPage/ServicesPage';
 import OnlineAppointment from './pages/OnlineAppointment/OnlineAppointment';
 import UpdateAppointments from './pages/UpdateAppointments/UpdateAppointments';
+import DoctorAppointments from './pages/DoctorAppointments/DoctorAppointments';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/servicios" element={<ServicesPage />} />
         <Route path="/citasOnline" element={<OnlineAppointment />} />
         <Route path="/updateAppointments" element={<UpdateAppointments />} />
+        <Route path="/doctorAppointments" element={<DoctorAppointments />} />
 
 
       </Routes>

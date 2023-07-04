@@ -80,7 +80,7 @@ export const fetchUserAppointments = async (token) => {
     }
   };
 
-  export const updateAppointment = async (token, appointmentData) => {
+export const updateAppointment = async (token, appointmentData) => {
     try {
       const response = await axios.put(
         `http://localhost:3000/appointments/${appointmentData.id}`,
@@ -89,6 +89,7 @@ export const fetchUserAppointments = async (token) => {
           headers: {
             Authorization: `Bearer ${token}`,
           },
+          data: data,
         }
       );
       return response.data;
@@ -97,4 +98,25 @@ export const fetchUserAppointments = async (token) => {
       throw error;
     }
   };
+
+
+
+  export const fetchAllAppointments = async (token, appointmentData) => {
+    try {
+      const response = await axios.get('http://localhost:3000/appointments/all', 
+      appointmentData,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        },
+      );
+      return response.data;
+    } catch (error) {
+      console.error('Error al actualizar la cita:', error);
+      throw error;
+    }
+  };
+  
+  
   

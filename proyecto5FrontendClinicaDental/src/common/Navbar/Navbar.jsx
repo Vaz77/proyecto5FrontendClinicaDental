@@ -23,6 +23,7 @@ const CustomNavbar = () => {
             <NavLink as={NavLink} to='/citasOnline' exact="true" className="iniciarSesion"> <h5>Cita Online</h5> </NavLink>
             <NavLink as={NavLink} to='/perfil' exact="true" className="iniciarSesion"> <h5>Perfil de Usuario</h5> </NavLink>
             <NavLink as={NavLink} to='/servicios' exact="true" className="iniciarSesion"> <h5>Tratamientos</h5> </NavLink>
+            <NavLink as={NavLink} to='/doctorAppointments' exact="true" className="iniciarSesion"> <h5>Dentista</h5> </NavLink>
             </Nav>
         </Navbar.Collapse>
         </div>

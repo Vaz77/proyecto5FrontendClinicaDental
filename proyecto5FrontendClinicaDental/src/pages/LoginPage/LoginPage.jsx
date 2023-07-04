@@ -83,7 +83,7 @@ export const LoginPage = () => {
                 type="submit"
                 onClick={(e)=>{submitHandler(e, user)}}
                 >
-                Submit
+                Iniciar sesión
                 </Button>
             </Form>
             </Col>
