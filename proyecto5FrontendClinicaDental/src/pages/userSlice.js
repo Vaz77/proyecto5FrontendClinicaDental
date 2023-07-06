@@ -8,7 +8,7 @@ export const userSlice = createSlice({
     },
     data: {
       name: "",
-      role: 3,
+      role: "3",
     },
   },
   reducers: {
