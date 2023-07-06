@@ -14,6 +14,8 @@ export const userSlice = createSlice({
   reducers: {
     login: (state, action) => {
       let { payload } = action;
+        console.log('Login - Token:', payload.token);
+        console.log('Login - Role:', payload.role);
       (state.credentials = {
         token: payload.token,
       }),
@@ -38,6 +40,7 @@ export const userSlice = createSlice({
       let { payload } = action;
       (state.credentials = {
         token: payload.token,
+        
       }),
         (state.data = {
           name: payload.name,

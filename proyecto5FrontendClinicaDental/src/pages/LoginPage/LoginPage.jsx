@@ -36,8 +36,9 @@ export const LoginPage = () => {
             login({
                 token: res,
                 name: decoded.name,
-                role: decoded.rol
-            })
+                role: decoded.role
+            }),
+            console.log(res.data)
         )
         navigate("/")
     })
