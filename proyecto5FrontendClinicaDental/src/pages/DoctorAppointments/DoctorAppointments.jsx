@@ -6,7 +6,7 @@ import { userData } from '../userSlice';
 
 function DoctorAppointments() {
   const [appointments, setAppointments] = useState([]);
-  const { credentials, token } = useSelector(userData);
+  const { credentials } = useSelector(userData);
 
   useEffect(() => {
     const getAppointments = async () => {

@@ -80,16 +80,15 @@ export const fetchUserAppointments = async (token) => {
     }
   };
 
-export const updateAppointment = async (token, appointmentData) => {
+  export const updateAppointment = async (token, appointmentData) => {
     try {
       const response = await axios.put(
         `http://localhost:3000/appointments/${appointmentData.id}`,
-        appointmentData,
+        appointmentData, // Elimina la propiedad "data"
         {
           headers: {
             Authorization: `Bearer ${token}`,
           },
-          data: data,
         }
       );
       return response.data;
@@ -98,6 +97,7 @@ export const updateAppointment = async (token, appointmentData) => {
       throw error;
     }
   };
+  
 
 
 

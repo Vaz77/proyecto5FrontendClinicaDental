@@ -4,7 +4,7 @@ import { fetchAllUsers } from '../../services/apiCalls';
 
 const AllUsers = () => {
     const [users, setUsers] = useState([]);
-  const userToken = useSelector((state) => state.user.credentials.token); // Obtén el token de autenticación desde el estado global
+    const userToken = useSelector((state) => state.user.credentials.token);
 
     useEffect(() => {
     getAllUsers();
@@ -12,7 +12,7 @@ const AllUsers = () => {
 
     const getAllUsers = async () => {
     try {
-      const response = await fetchAllUsers(userToken); // Pasa el token a la función fetchAllUsers
+        const response = await fetchAllUsers(userToken);
         setUsers(response.data);
     } catch (error) {
         console.error('Error al obtener los usuarios:', error);
