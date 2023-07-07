@@ -36,7 +36,7 @@ export const LoginPage = () => {
             login({
                 token: res,
                 name: decoded.name,
-                role: decoded.role
+                role: decoded.roleId
             }),
             console.log(res.data)
         )

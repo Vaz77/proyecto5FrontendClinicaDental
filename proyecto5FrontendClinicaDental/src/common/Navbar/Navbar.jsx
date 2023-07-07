@@ -10,7 +10,9 @@ import logo from '../../../public/logotipoClinica.jpeg';
 const CustomNavbar = () => {
   const dispatch = useDispatch();
   const user = useSelector(state => state.user);
+  console.log(user)
   const token = user.credentials.token;
+  const role = user.data.role;
 
   const handleLogout = () => {
     dispatch(logout());
@@ -50,12 +52,16 @@ const CustomNavbar = () => {
             <NavLink as={NavLink} to='/servicios' exact="true" className="iniciarSesion">
               <h5>Tratamientos</h5>
             </NavLink>
-          <NavLink as={NavLink} to='/doctorAppointments' exact="true" className="iniciarSesion">
-            <h5>Dentista</h5>
-          </NavLink>
-            <NavLink as={NavLink} to='/allUsers' exact="true" className="iniciarSesion">
-              <h5>Usuarios registrados</h5>
-            </NavLink>
+            {token && role === 2 && (
+              <NavLink as={NavLink} to='/doctorAppointments' exact="true" className="iniciarSesion">
+                <h5>Dentista</h5>
+              </NavLink>
+            )}
+            {token && role === 1 && (
+              <NavLink as={NavLink} to='/allUsers' exact="true" className="iniciarSesion">
+                <h5>Usuarios registrados</h5>
+              </NavLink>
+            )}
           </Nav>
         </Navbar.Collapse>
       </div>
