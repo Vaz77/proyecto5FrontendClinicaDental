@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
 import { Row, Col } from 'react-bootstrap';
 import './HomePage.css';
-import CardItem from '../../common/CardItem/CardItem';
 import cardImage from '../../assets/esteticaDental.png';
 import cardImage2 from '../../assets/implantologia.png';
 import cardImage3 from '../../assets/iconoOrtodoncia.png';
