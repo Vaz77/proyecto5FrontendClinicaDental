@@ -25,3 +25,18 @@
 }
 
 
+.zoom-Boton {
+    background-color: rgb(230, 112, 69);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    transition: transform 0.5s;
+    margin: 0.5em;
+}
+
+.zoom-Boton:hover {
+    transform: scale(1.1);
+    background-color: rgb(253, 154, 118);
+    color: white;
+    border: solid 0.1em black;
+}

@@ -1,6 +1,6 @@
 .appointmentsUser{
         border: solid 0.3em white;
-        background-color: lightseagreen;
+        background-color: rgb(76, 179, 174);
         margin: 1em;
         border-radius: 1em 0em 1em 0em;
         padding: 0.5em;
@@ -12,10 +12,6 @@
     background-color: yellow;
     color: black;
     transition: 1s;
-}
-
-.botonUpdate:hover {
-    background-color: orange;
 }
 
 .dateSearch{
@@ -35,4 +31,19 @@
 .filtroBusqueda{
     display: flex;
     justify-content: center;
+}
+
+.zoom-Boton3 {
+    background-color: rgb(230, 112, 69);
+    color: white;
+    border: none;
+    transition: transform 0.5s;
+    margin-left: 4.6em;
+    padding: 10px 20px;
+}
+.zoom-Boton3:hover {
+    transform: scale(1.1);
+    background-color: rgb(253, 154, 118);
+    color: white;
+    border: solid 0.1em black;
 }

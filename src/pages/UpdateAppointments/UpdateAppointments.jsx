@@ -87,7 +87,7 @@ function UpdateAppointments() {
           <p>Observaciones: {appointment.observations}</p>
           <Button
             variant="primary"
-            className="botonUpdate"
+            className="zoom-Boton3"
             onClick={() => handleModifyAppointment(appointment)}
           >
             Modificar Cita
@@ -106,14 +106,6 @@ function UpdateAppointments() {
           </Modal.Header>
           <Modal.Body>
             <Form>
-              <Form.Group controlId="formAppointmentId">
-                <Form.Label>ID de la cita</Form.Label>
-                <Form.Control
-                  type="text"
-                  value={modifiedAppointment.id}
-                readOnly
-                />
-              </Form.Group>
               <Form.Group controlId="formAppointmentTime">
                 <Form.Label>Hora</Form.Label>
                 <Form.Control
@@ -157,10 +149,10 @@ function UpdateAppointments() {
             </Form>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={() => setShowModal(false)}>
+            <Button variant="secondary" className='zoom-Boton' onClick={() => setShowModal(false)}>
               Cancelar
             </Button>
-            <Button variant="primary" onClick={handleSaveChanges}>
+            <Button variant="primary" className='zoom-Boton' onClick={handleSaveChanges}>
               Guardar Cambios
             </Button>
           </Modal.Footer>

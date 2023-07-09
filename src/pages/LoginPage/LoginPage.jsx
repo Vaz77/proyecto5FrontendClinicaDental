@@ -82,6 +82,7 @@ export const LoginPage = () => {
                 <Button
                 variant="primary"
                 type="submit"
+                className="zoom-Boton4"
                 onClick={(e)=>{submitHandler(e, user)}}
                 >
                 Iniciar sesión

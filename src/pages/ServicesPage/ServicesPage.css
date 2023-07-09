@@ -4,8 +4,7 @@
     align-items: center;
     justify-content: center;
     min-height: calc(100vh - 5rem);
-    width: 100vw;
-    
+    width: 100vw; 
 }
 
 
@@ -13,16 +12,53 @@
     width: 25em;
     height: auto;
     margin: 0.8em;
-    border-radius: 1em 0em 1em 0em;;
+    border: solid 0.3em white;
+    border-radius: 1em 0em 1em 0em;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
   }
-
+  
+  .treatment-image .front {
+    position: absolute;
+    width: 25em;
+    height: auto;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+  }
+  
+  .treatment-image .back {
+    position: absolute;
+    width: 25em;
+    height: auto;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
+  
+  .treatment-image:hover {
+    transform: rotateY(180deg);
+  }
+  
+  
+  
   .treatment-name {
     display: flex;
     justify-content: center;
-    color: aliceblue;
+    color: darkmagenta;
+    opacity: 0;
+    transition: opacity 2s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 1.5em;
+    margin-bottom: 0em;
+    max-width: 15em;
   }
+  
+  .treatment-column:hover .treatment-name {
+    opacity: 1;
+  }
+  
+  
 
   .textoServicios {
     color: aliceblue;
-    margin: 1em;
+    margin:2em;
   }

@@ -17,6 +17,7 @@ const OnlineAppointment = () => {
     const [userId, setUserId] = useState('');
     const [serviceName, setServiceName] = useState('');
     const { credentials } = useSelector(userData);
+    
 
     const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -110,11 +111,11 @@ const OnlineAppointment = () => {
             />
         </Form.Group>
         <div className='botones'>
-        <Button variant="primary" type="submit" className='boton'>
+        <Button variant="" type="submit" className='zoom-Boton'>
             Solicitar
         </Button>
         <Link to="/updateAppointments">
-    <Button variant="primary" className='boton2'>
+    <Button variant="" className='zoom-Boton'>
         Ver todas mis citas
     </Button>
 </Link>

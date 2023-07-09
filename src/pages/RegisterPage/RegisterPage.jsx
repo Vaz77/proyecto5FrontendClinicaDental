@@ -128,6 +128,7 @@ const inputHandler = ({ target }) => {
                 <Button
                 variant="primary"
                 type="submit"
+                className="zoom-Boton2"
                 onClick={(e)=>{submitHandler(e, user)}}
                 >
                 Registrar
