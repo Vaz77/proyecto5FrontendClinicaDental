@@ -13,6 +13,7 @@ const CustomNavbar = () => {
   console.log(user)
   const token = user.credentials.token;
   const role = user.data.role;
+  const name = user.data.name;
 
   const handleLogout = () => {
     dispatch(logout());
@@ -55,13 +56,19 @@ const CustomNavbar = () => {
             </NavLink>
             )}
             {token ? (
-              <NavLink as={NavLink} to="/" exact="true" className="iniciarCerrar" onClick={handleLogout}>
+              <>
+              <h5 className="iniciarCerrar">Bienvenid@ {name}</h5>
+              <NavLink as={NavLink} to="/" exact="true" 
+              className="iniciarCerrar" onClick={handleLogout}>
                 <h5>Cerrar sesión</h5>
               </NavLink>
+              </>
             ) : (
+              <>
               <NavLink as={NavLink} to="/login" exact="true" className="iniciarCerrar">
                 <h5>Iniciar sesión</h5>
               </NavLink>
+              </>
             )}
           </Nav>
         </Navbar.Collapse>

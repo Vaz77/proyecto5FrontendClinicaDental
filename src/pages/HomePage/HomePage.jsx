@@ -139,10 +139,10 @@ const HomePage = () => {
         <div className='infoGeneral3 fadeIn'>
             <Row>
                 <Col md={5} className='info-column3'>
-                    <img className='info-image3' src={reseña} alt="" />
+                    <img className='info-image3' src={reseña2} alt="" />
                 </Col>
                 <Col md={5} className='info-column3'>
-                    <img className='info-image3' src={reseña2} alt="" />
+                    <img className='info-image3' src={reseña} alt="" />
                 </Col>
                 <Col md={5} className='info-column3'>
                     <img className='info-image3' src={reseña3} alt="" />

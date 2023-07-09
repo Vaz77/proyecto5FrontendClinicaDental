@@ -16,6 +16,7 @@ export const userSlice = createSlice({
       let { payload } = action;
       console.log("Login - Token:", payload.token);
       console.log("Login - Role:", payload.role);
+      console.log("Login - Name:", payload.name);
       (state.credentials = {
         token: payload.token,
       }),
