@@ -33,9 +33,9 @@ const AllUsers = () => {
       }, []);
 
     return (
-    <div className='general'>
+    <div className='generalHome'>
         
-      <h1>Todos los usuarios registrados</h1>
+      <h1 className='textUsers'>Todos los usuarios registrados</h1>
       <div className='profileUsers'>
       {pairs.map((pair, index) => (
         <Row key={index} className=''>

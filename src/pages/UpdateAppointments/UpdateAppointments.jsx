@@ -60,10 +60,10 @@ function UpdateAppointments() {
     }
   };
   return (
-    <div className='general'>
+    <div className='generalHome'>
       <div>
-      <h2>Mis citas</h2>
-      <div>
+      <h2 className='misCitas'>Mis citas</h2>
+      <div className='generalUpdate'>
         <Form.Group controlId="searchDate">
           <Form.Label className='filtroBusqueda'>Buscar cita por fecha</Form.Label>
           <Form.Control

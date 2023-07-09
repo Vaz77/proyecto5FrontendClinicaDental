@@ -14,9 +14,9 @@ import especialista from '../../assets/especialistas.jpg';
 import primeraCita from '../../assets/primeraCita.jpg';
 import financiacion from '../../assets/financiacion.jpg';
 import ControlledCarousel from '../../common/ControlledCarousel/ControlledCarousel';
-import reseña from '../../assets/reseñaGoogle.jpeg'
+import reseña from '../../assets/reseñaGoogle3.jpg'
 import reseña2 from '../../assets/reseñaGoogle4.png'
-import reseña3 from '../../assets/reseñaGoogle5.jpeg'
+import reseña3 from '../../assets/reseñaGoogle7.jpg'
 
 const HomePage = () => {
 
@@ -138,14 +138,13 @@ const HomePage = () => {
         <h2 className='textoOpiniones'>Opiniones</h2>
         <div className='infoGeneral3 fadeIn'>
             <Row>
-                <Col md={4} className='info-column3'>
+                <Col md={5} className='info-column3'>
                     <img className='info-image3' src={reseña} alt="" />
-
                 </Col>
-                <Col md={4} className='info-column3'>
+                <Col md={5} className='info-column3'>
                     <img className='info-image3' src={reseña2} alt="" />
                 </Col>
-                <Col md={4} className='info-column3'>
+                <Col md={5} className='info-column3'>
                     <img className='info-image3' src={reseña3} alt="" />
                 </Col>
             </Row>

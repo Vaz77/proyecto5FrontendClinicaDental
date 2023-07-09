@@ -25,7 +25,8 @@ function DoctorAppointments() {
   }, []);
 
   return (
-    <Row className='general'>
+    <div className='generalHome'>
+    <Row>
     <div className='doctorGeneral'>
       <h1 className='textDoctor'>Todas las citas como doctor</h1>
       {appointments.map(appointment => (
@@ -38,6 +39,7 @@ function DoctorAppointments() {
       ))}
     </div>
     </Row>
+    </div>
   );
 }
 

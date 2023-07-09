@@ -13,10 +13,11 @@
 
 .encabezado {
     font-size: 2rem;
-    color: rgb(159, 64, 158);
+    color: white;
     margin: 2rem;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1em;
 }
 
 .imagenPrincipal {
@@ -24,7 +25,7 @@
     height: auto;
     border-radius: 0.5em;
     margin: 1em;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom: 3em;
 }
 
@@ -185,13 +186,16 @@
     align-items: center;
     color:rgb(159, 64, 158);
     background-color: rgba(240, 248, 255, 0.896);
-    width: 200vh;
+    width: 100%;
     height: 3em;
     }
 
+    .general3{
+        width: 100%;
+    }
     .infoGeneral3 {
         margin-top: 5em;
-        width: auto;
+        width: 100%;
     }
 
     .info-column3 {
@@ -199,12 +203,12 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        width: 100%;
     }
 
     .info-image3 {
-        width: 80%;
-        max-width: auto;
-        height: auto;
+        max-width: 100%;
+        max-height: 100%;
         margin-bottom: 2em;
         border: solid 0.2em white;
         border-radius: 1%;

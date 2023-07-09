@@ -62,10 +62,10 @@ const OnlineAppointment = () => {
         }
         };
     return (
-        <div className='general'>
+        <div className='generalHome'>
     <div className="online-appointment-container">
             <div className='textoCita'>
-        <h2 >Pedir Cita Online</h2>
+        <h2 className='textAppoint'>Pedir Cita Online</h2>
         <Form onSubmit={handleSubmit}>
         <Form.Group controlId="time">
             <Form.Label>Hora</Form.Label>

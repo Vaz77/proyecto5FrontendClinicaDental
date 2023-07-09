@@ -46,7 +46,7 @@ export const LoginPage = () => {
     
     return (
     <>
-    <div className="general">
+    <div className="generalHome">
         <Container className="formulario">
         <Row className="justify-content-center m-5">
             <Col

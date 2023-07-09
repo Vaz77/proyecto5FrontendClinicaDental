@@ -36,9 +36,6 @@ const CustomNavbar = () => {
             <NavLink as={NavLink} to='/citasOnline' exact="true" className="iniciarSesion">
               <h5>Cita Online</h5>
             </NavLink>
-            <NavLink as={NavLink} to='/perfil' exact="true" className="iniciarSesion">
-              <h5>Perfil de Usuario</h5>
-            </NavLink>
             <NavLink as={NavLink} to='/servicios' exact="true" className="iniciarSesion">
               <h5>Tratamientos</h5>
             </NavLink>
@@ -51,6 +48,11 @@ const CustomNavbar = () => {
               <NavLink as={NavLink} to='/allUsers' exact="true" className="iniciarSesion">
                 <h5>Usuarios registrados</h5>
               </NavLink>
+            )}
+            {token && role === 3 && (
+            <NavLink as={NavLink} to='/perfil' exact="true" className="iniciarSesion">
+              <h5>Perfil de Usuario</h5>
+            </NavLink>
             )}
             {token ? (
               <NavLink as={NavLink} to="/" exact="true" className="iniciarCerrar" onClick={handleLogout}>

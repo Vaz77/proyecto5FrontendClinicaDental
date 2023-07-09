@@ -6,6 +6,7 @@
     background-color: lightseagreen;
     color: white;
     transition: transform 0.3s;
+    width: 80%;
 }
 
 .doctorAppointments:hover {
@@ -20,5 +21,6 @@
 }
 
 .textDoctor {
-    margin-bottom: 1em;
+    margin: 1em;
+    color: lightcyan;
 }
