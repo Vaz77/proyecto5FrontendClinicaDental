@@ -14,14 +14,13 @@
 .encabezado {
     font-size: 2rem;
     color: white;
-    margin: 2rem;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 1em;
 }
 
 .imagenPrincipal {
-    width: 70vw;
+    width: 55vw;
     height: auto;
     border-radius: 0.5em;
     margin: 1em;

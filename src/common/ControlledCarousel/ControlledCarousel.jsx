@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import image1 from '../../assets/image1.jpg';
-import image2 from '../../assets/image2.jpg';
+import image1 from '../../assets/image6.png';
+import image2 from '../../assets/image4.jpg';
 import image3 from '../../assets/image3.jpg';
 
 
@@ -15,7 +15,7 @@ function ControlledCarousel() {
         <Carousel.Item>
         <img
             className="d-block w-100"
-            src={image1}
+            src={image2}image
             alt="First slide"
         />
         <Carousel.Caption>
@@ -26,7 +26,7 @@ function ControlledCarousel() {
         <Carousel.Item>
         <img
             className="d-block w-100"
-            src={image2}
+            src={image1}
             alt="Second slide"
         />
         <Carousel.Caption>
