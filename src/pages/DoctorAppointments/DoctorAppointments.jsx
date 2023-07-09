@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { fetchAllAppointments } from '../../services/apiCalls';
 import { useSelector } from 'react-redux';
 import { userData } from '../userSlice';
+import './DoctorAppointments.css'
+import { Row, Col } from 'react-bootstrap'
 
 
 function DoctorAppointments() {
@@ -23,17 +25,19 @@ function DoctorAppointments() {
   }, []);
 
   return (
-    <div>
-      <h1>Todas las citas como doctor</h1>
+    <Row className='general'>
+    <div className='doctorGeneral'>
+      <h1 className='textDoctor'>Todas las citas como doctor</h1>
       {appointments.map(appointment => (
-        <div key={appointment.id}>
+        <Col md={5} key={appointment.id} className='doctorAppointments'>
           <p>ID de la cita: {appointment.id}</p>
           <p>Hora: {appointment.time}</p>
           <p>Fecha: {appointment.date}</p>
           <p>Observaciones: {appointment.observations}</p>
-        </div>
+        </Col>
       ))}
     </div>
+    </Row>
   );
 }
 

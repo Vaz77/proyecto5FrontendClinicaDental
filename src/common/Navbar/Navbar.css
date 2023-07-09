@@ -1,28 +1,13 @@
-.CustomNavbar {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-.navbar-link {
-    margin-left: 1rem;
-    color: #fff;
-    text-decoration: none;
-    padding: 0.2rem 1rem;
-    border-radius: 0.6rem;
-}
-
-.navbar-link:hover {
-    background-color: grey;
+.navbar {
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
-    height: 5em;
+    height: 5.5em;
     margin-right: 0.5em; 
     border-radius: 50%;
-    margin-left: 1em;
-    margin-bottom: 1em;
+    margin: 1em;
     transition: 1s;
 }
 
@@ -33,34 +18,40 @@
 .linksNavbar {
     display: flex;
     justify-content: flex-end;
-    margin-left: 10em;
+    margin:1em;
 }
 
 .textoLogo {
-    margin-left: 0.5em;
+    margin-left: 0.8em;
     color: white;
     transition: 1s;
 }
 
 .textoLogo:hover{
     transform: scale(1.2);
+    color: orange;
 }
 
 .container-fluid {
-    max-width: 100vw;
-    margin: 0 auto;
-    padding: 1rem;
+    max-width: 100%;
     background-color: lightseagreen;
+    background-size: cover;
 }
 
-.inicio, .registro, .iniciarSesion, .menu {
+.inicio, .registro, .iniciarSesion,  .menu {
     margin: 1em;
     color: white;
 }
 
-.inicio:hover {
+.iniciarCerrar {
+    margin: 1em;
+    color: white;
     transition: 1s;
+}
+
+.inicio:hover {
     color: rgb(14, 114, 133);
+    transition: 1s;
 }
 
 .registro:hover {
@@ -72,3 +63,15 @@
     transition: 1s;
     color: rgb(14, 114, 133);
 }
+
+.iniciarCerrar:hover {
+    transition: 1s;
+    color: rgb(14, 114, 133);
+}
+
+.cardsGeneral3 {
+    display: flex;
+    margin: 4em;
+    border: solid 0.4em black;
+}
+

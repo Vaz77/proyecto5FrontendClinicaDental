@@ -1,0 +1,24 @@
+.doctorAppointments {
+    border: solid 0.3em white;
+    margin: 1em;
+    border-radius: 1em 0em 1em;
+    padding: 0.5em;
+    background-color: lightseagreen;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.doctorAppointments:hover {
+    transform: scale(1.05);
+}
+
+.doctorGeneral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textDoctor {
+    margin-bottom: 1em;
+}

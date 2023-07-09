@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Nav } from 'react-bootstrap';
 import { Row, Col } from 'react-bootstrap';
 import './HomePage.css';
 import cardImage from '../../assets/esteticaDental.png';
@@ -15,17 +14,39 @@ import especialista from '../../assets/especialistas.jpg';
 import primeraCita from '../../assets/primeraCita.jpg';
 import financiacion from '../../assets/financiacion.jpg';
 import ControlledCarousel from '../../common/ControlledCarousel/ControlledCarousel';
-
-
+import reseña from '../../assets/reseñaGoogle.jpeg'
+import reseña2 from '../../assets/reseñaGoogle4.png'
+import reseña3 from '../../assets/reseñaGoogle5.jpeg'
 
 const HomePage = () => {
+
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const elements = document.querySelectorAll('.fadeIn');
+        elements.forEach((element) => {
+            const elementPosition = element.offsetTop;
+        
+            if (scrollPosition > elementPosition - windowHeight + 100) {
+                element.classList.add('active');
+            } else {
+                element.classList.remove('active');
+            }
+            });
+        };
+        useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+        }, []);
     return (
-        <div className='general'>
+        <div className='generalHome'>
         <h1 className="encabezado">Bienvenidos a DentaLife</h1>
         <div className='imagenPrincipal'>
         <ControlledCarousel />
         </div>
-        <div className='infoHome'>
+        <div className='infoHome fadeIn'>
             <Row>
                 <Col md={4} className='info-column'>
                     <img className='info-image' src={especialista} alt="Imagen 1" />
@@ -50,7 +71,7 @@ const HomePage = () => {
                 </Col>
             </Row>
         </div>
-        <div className='general2'>
+        <div className='general2 fadeIn'>
             <h2 className='textoTratamientos'>Tratamientos</h2>
             <div className='infoTratamientos'>
             <Row>
@@ -58,62 +79,78 @@ const HomePage = () => {
                     <img className='info-imageTratamientos' src={cardImage3} alt="Imagen 1" />
                     <div className='info-textTratamientos'>
                     <NavLink as={NavLink} to='/servicios' exact="true" className="ortodoncia"> <h3>Ortodoncia</h3> </NavLink>
-                        <p>Sonrisa perfecta y salud dental. Corrige problemas y mejora tu bienestar bucal</p>
+                        <h6>Sonrisa perfecta y salud dental. Corrige problemas y mejora tu bienestar bucal</h6>
                     </div>
                 </Col>
                 <Col md={4} className='info-columnTratamientos'>
                     <img className='info-imageTratamientos' src={cardImage2} alt="Imagen 2" />
                     <div className='info-textTratamientos'>
                     <NavLink as={NavLink} to='/servicios' exact="true" className="implante"> <h3>Implantologia</h3> </NavLink>
-                        <p>Recupera tu sonrisa y función dental perdida. Una solución segura y duradera recomendada para restaurar tu bienestar oral</p>
+                        <h6>Recupera tu sonrisa y función dental perdida. Una solución segura y duradera recomendada para restaurar tu bienestar oral</h6>
                     </div>
                 </Col>
                 <Col md={4} className='info-columnTratamientos'>
                     <img className='info-imageTratamientos' src={cardImage} alt="Imagen 3" />
                     <div className='info-textTratamientos'>
                     <NavLink as={NavLink} to='/servicios' exact="true" className="estetica"> <h3>Estetica dental</h3> </NavLink>
-                        <p>Sonrisa radiante y confianza renovada. Mejora tu apariencia dental y resalta tu belleza natural. ¡Recomendado para lucir tu mejor versión!</p>
+                        <h6>Sonrisa radiante y confianza renovada. Mejora tu apariencia dental y resalta tu belleza natural. ¡Recomendado para lucir tu mejor versión!</h6>
                     </div>
                 </Col>
                 <Col md={4} className='info-columnTratamientos'>
                     <img className='info-imageTratamientos' src={cardImage5} alt="Imagen 3" />
                     <div className='info-textTratamientos'>
                     <NavLink as={NavLink} to='/servicios' exact="true" className="pediatria"> <h3>Odontopediatría</h3> </NavLink>
-                        <p> Sonrisas saludables desde temprana edad. Brinda a tus hijos una atención dental especializada y divertida. ¡Recomendado para un crecimiento bucal sano y feliz!</p>
+                        <h6> Sonrisas saludables desde temprana edad. Brinda a tus hijos una atención dental especializada y divertida. ¡Recomendado para un crecimiento bucal sano y feliz!</h6>
                     </div>
                 </Col>
                 <Col md={4} className='info-columnTratamientos'>
                     <img className='info-imageTratamientos' src={cardImage4} alt="Imagen 3" />
                     <div className='info-textTratamientos'>
                     <NavLink as={NavLink} to='/servicios' exact="true" className="periodoncia"> <h3>Periodoncia</h3> </NavLink>
-                        <p>Cuida tus encías y conserva tus dientes. Tratamiento recomendado para prevenir y tratar enfermedades periodontales, garantizando una salud bucal óptima</p>
+                        <h6>Cuida tus encías y conserva tus dientes. Tratamiento recomendado para prevenir y tratar enfermedades periodontales, garantizando una salud bucal óptima</h6>
                     </div>
                 </Col>
                 <Col md={4} className='info-columnTratamientos'>
                     <img className='info-imageTratamientos' src={cardImage6} alt="Imagen 3" />
                     <div className='info-textTratamientos'>
                     <NavLink as={NavLink} to='/servicios' exact="true" className="endodoncia"> <h3>Endodoncia</h3> </NavLink>
-                        <p>Salva tus dientes y alivia el dolor. Tratamiento recomendado para tratar infecciones en la raíz dental y preservar tu sonrisa de forma segura y efectiva.</p>
+                        <h6>Salva tus dientes y alivia el dolor. Tratamiento recomendado para tratar infecciones en la raíz dental y preservar tu sonrisa de forma segura y efectiva.</h6>
                     </div>
                 </Col>
                 <Col md={4} className='info-columnTratamientos'>
                     <img className='info-imageTratamientos' src={cardImage7} alt="Imagen 3" />
                     <div className='info-textTratamientos'>
                     <NavLink as={NavLink} to='/servicios' exact="true" className="protesis"> <h3>Prótesis dental</h3> </NavLink>
-                        <p>Sonríe sin preocupaciones. Solución recomendada para reemplazar dientes perdidos y restaurar tu función masticatoria y estética dental. Recupera tu sonrisa completa y disfruta de una mejor calidad de vida</p>
+                        <h6>Sonríe sin preocupaciones. Solución recomendada para reemplazar dientes perdidos y restaurar tu función masticatoria y estética dental. Recupera tu sonrisa completa y disfruta de una mejor calidad de vida</h6>
                     </div>
                 </Col>
                 <Col md={4} className='info-columnTratamientos'>
                     <img className='info-imageTratamientos' src={cardImage8} alt="Imagen 3" />
                     <div className='info-textTratamientos'>
                     <NavLink as={NavLink} to='/servicios' exact="true" className="cirugia"> <h3>Cirugía Oral</h3> </NavLink>
-                        <p>Solución precisa y efectiva. Recomendada para tratar problemas complejos en la boca, como extracciones de muelas del juicio, colocación de implantes y correcciones quirúrgicas. Confía en la cirugía oral para mejorar tu salud bucal de manera segura y satisfactoria.</p>
+                        <h6>Solución precisa y efectiva. Recomendada para tratar problemas complejos en la boca, como extracciones de muelas del juicio, colocación de implantes y correcciones quirúrgicas. Confía en la cirugía oral para mejorar tu salud bucal de manera segura y satisfactoria.</h6>
                     </div>
                 </Col>
             </Row>
             </div>
         </div>
-        
+        <div className='general3 fadeIn'>
+        <h2 className='textoOpiniones'>Opiniones</h2>
+        <div className='infoGeneral3 fadeIn'>
+            <Row>
+                <Col md={4} className='info-column3'>
+                    <img className='info-image3' src={reseña} alt="" />
+
+                </Col>
+                <Col md={4} className='info-column3'>
+                    <img className='info-image3' src={reseña2} alt="" />
+                </Col>
+                <Col md={4} className='info-column3'>
+                    <img className='info-image3' src={reseña3} alt="" />
+                </Col>
+            </Row>
+        </div>
+        </div>
         </div>
     );
     };

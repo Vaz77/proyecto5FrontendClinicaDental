@@ -27,9 +27,6 @@ function App() {
         <Route path="/updateAppointments" element={<UpdateAppointments />} />
         <Route path="/doctorAppointments" element={<DoctorAppointments />} />
         <Route path="/allUsers" element={<AllUsers />} />
-
-
-
       </Routes>
     </>
   )

@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { fetchAllUsers } from '../../services/apiCalls';
 import { Row, Col } from 'react-bootstrap'
 import './AllUsers.css'
+
 const AllUsers = () => {
     const [users, setUsers] = useState([]);
     const userToken = useSelector((state) => state.user.credentials.token);

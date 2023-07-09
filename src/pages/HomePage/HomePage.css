@@ -1,15 +1,14 @@
-.general {
+.generalHome {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: calc(100vh - 5rem);
     width: 100%;
-    padding: 4rem;
-    background-image: url('../../assets/fondoClinica5.jpeg');
+    background-image: url('../../assets/fondo23.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    overflow-x: hidden;
 }
 
 .encabezado {
@@ -21,10 +20,12 @@
 }
 
 .imagenPrincipal {
-    width: 75vw;
+    width: 70vw;
     height: auto;
     border-radius: 0.5em;
     margin: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .card-container {
@@ -36,7 +37,7 @@
     box-shadow: inset;
 }
 
-.card-container > div {
+.card-container{
     margin: 0 7em 7em 0;
     max-width:15em;
 }
@@ -55,6 +56,7 @@
 
 .infoHome {
     margin-top: 20px;
+    width: auto;
 }
 
 .info-column {
@@ -74,38 +76,35 @@
 }
 
 .info-image {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    margin-bottom: 50px;
-    border: solid 0.2em white;
-    border-radius: 1%;
-    transition: transform 0.3s;
+    margin-bottom: 2em;
+    margin-top: 5em;
 }
-
-.info-image:hover{
-    transform: scale(1.05);
-}
-
 
 .info-text {
-    margin-bottom: 20px;
+    margin-bottom: 4em;
+    transition: font-size 0.3s ease;
+}
+
+.info-text:hover {
+    font-size: 20px;
 }
 
 .general2 {
-    background-color: rgba(237, 236, 236, 0.903);
-    width: 100vw;
+    background-image: url(../../assets/fondo29.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .textoTratamientos {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:rgb(159, 64, 158);
     background-color: rgba(240, 248, 255, 0.896);
-    width: 100vw;
+    width: 100%;
     height: 3em;
 }
 
@@ -171,4 +170,50 @@
     .cirugia:hover {
         color: lightseagreen;
     }
+
+    .fadeIn {
+        opacity: 0;
+        transition: opacity 2.4s ease-in-out;
+    }
+    .fadeIn.active {
+        opacity: 1;
+    }
+
+    .textoOpiniones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(159, 64, 158);
+    background-color: rgba(240, 248, 255, 0.896);
+    width: 200vh;
+    height: 3em;
+    }
+
+    .infoGeneral3 {
+        margin-top: 5em;
+        width: auto;
+    }
+
+    .info-column3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-image3 {
+        width: 80%;
+        max-width: auto;
+        height: auto;
+        margin-bottom: 2em;
+        border: solid 0.2em white;
+        border-radius: 1%;
+        transition: transform 0.3s;
+    }
+    
+    .info-image3:hover{
+        transform: scale(1.05);
+    }
+
+
 

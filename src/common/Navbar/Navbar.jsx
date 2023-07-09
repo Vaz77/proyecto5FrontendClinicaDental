@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { logout } from '../../pages/userSlice';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../../../public/logotipoClinica.jpeg';
+import logo from '../../assets/logtipoClinica.png';
 
 const CustomNavbar = () => {
   const dispatch = useDispatch();
@@ -17,9 +17,8 @@ const CustomNavbar = () => {
   const handleLogout = () => {
     dispatch(logout());
   };
-
   return (
-    <Navbar expand="lg" bg="" variant="dark">
+    <Navbar expand="lg" bg="" variant="dark" className='navbar'>
       <div className='container-fluid'>
         <NavLink as={NavLink} to='/' exact="true">
           <img src={logo} alt="Logo" className="logo" />
@@ -27,22 +26,13 @@ const CustomNavbar = () => {
         </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="linksNavbar">
+          <Nav className="linksNavbar ml-auto">
             <NavLink as={NavLink} to='/' exact="true" className="inicio">
               <h5>Inicio</h5>
             </NavLink>
             <NavLink as={NavLink} to='/registro' exact="true" className="registro">
               <h5>Registro</h5>
             </NavLink>
-            {token ? (
-              <NavLink as={NavLink} to="/" exact="true" className="iniciarSesion" onClick={handleLogout}>
-                <h5>Cerrar sesión</h5>
-              </NavLink>
-            ) : (
-              <NavLink as={NavLink} to="/login" exact="true" className="iniciarSesion">
-                <h5>Iniciar sesión</h5>
-              </NavLink>
-            )}
             <NavLink as={NavLink} to='/citasOnline' exact="true" className="iniciarSesion">
               <h5>Cita Online</h5>
             </NavLink>
@@ -60,6 +50,15 @@ const CustomNavbar = () => {
             {token && role === 1 && (
               <NavLink as={NavLink} to='/allUsers' exact="true" className="iniciarSesion">
                 <h5>Usuarios registrados</h5>
+              </NavLink>
+            )}
+            {token ? (
+              <NavLink as={NavLink} to="/" exact="true" className="iniciarCerrar" onClick={handleLogout}>
+                <h5>Cerrar sesión</h5>
+              </NavLink>
+            ) : (
+              <NavLink as={NavLink} to="/login" exact="true" className="iniciarCerrar">
+                <h5>Iniciar sesión</h5>
               </NavLink>
             )}
           </Nav>

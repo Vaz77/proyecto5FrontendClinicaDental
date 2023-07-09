@@ -1,0 +1,28 @@
+
+.appointmentsUser{
+        border: solid 0.3em white;
+        background-color: lightseagreen;
+        margin: 1em;
+        border-radius: 1em 0em 1em 0em;
+        padding: 0.5em;
+        color: white;
+}
+
+.botonUpdate {
+    background-color: yellow;
+    color: black;
+    transition: 1s;
+}
+
+.botonUpdate:hover {
+    background-color: orange;
+}
+
+.dateSearch{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputDate{
+    margin-left: -2.7em;
+}
