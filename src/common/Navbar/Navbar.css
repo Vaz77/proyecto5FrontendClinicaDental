@@ -15,10 +15,15 @@
     transform: scale(1.2);
 }
 
+.ml-auto {
+    margin-left: auto !important;
+}
+
 .linksNavbar {
     display: flex;
-    justify-content: flex-end;
-    margin:1em;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
 }
 
 .textoLogo {
@@ -73,8 +78,4 @@
     display: flex;
     margin: 4em;
     border: solid 0.4em black;
-}
-
-.bienvenida {
-    margin-left: 5em;
 }

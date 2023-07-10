@@ -28,7 +28,7 @@ function DoctorAppointments() {
     <div className='generalHome'>
     <Row>
     <div className='doctorGeneral'>
-      <h1 className='textDoctor'>Todas las citas como doctor</h1>
+      <h1 className='textDoctor'>Todas las citas registradas</h1>
       {appointments.map(appointment => (
         <Col md={5} key={appointment.id} className='doctorAppointments'>
           <p>ID de la cita: {appointment.id}</p>

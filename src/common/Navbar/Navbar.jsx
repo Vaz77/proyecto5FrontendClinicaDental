@@ -10,7 +10,6 @@ import logo from '../../assets/logtipoClinica.png';
 const CustomNavbar = () => {
   const dispatch = useDispatch();
   const user = useSelector(state => state.user);
-  console.log(user)
   const token = user.credentials.token;
   const role = user.data.role;
   const name = user.data.name;
@@ -18,6 +17,7 @@ const CustomNavbar = () => {
   const handleLogout = () => {
     dispatch(logout());
   };
+
   return (
     <Navbar expand="lg" bg="" variant="dark" className='navbar'>
       <div className='container-fluid'>
@@ -42,7 +42,7 @@ const CustomNavbar = () => {
             </NavLink>
             {token && role === 2 && (
               <NavLink as={NavLink} to='/doctorAppointments' exact="true" className="iniciarSesion">
-                <h5>Dentista</h5>
+                <h5>Citas registradas</h5>
               </NavLink>
             )}
             {token && role === 1 && (
@@ -55,11 +55,12 @@ const CustomNavbar = () => {
               <h5>Perfil de Usuario</h5>
             </NavLink>
             )}
+          </Nav>
+          <Nav className="ml-auto">
             {token ? (
               <>
-              <h5 className="iniciarCerrar">Bienvenid@ {name}</h5>
-              <NavLink as={NavLink} to="/" exact="true" 
-              className="iniciarCerrar" onClick={handleLogout}>
+              <h5 className="iniciarCerrar bienvenida">Bienvenid@ {name}</h5>
+              <NavLink as={NavLink} to="/" exact="true" className="iniciarCerrar" onClick={handleLogout}>
                 <h5>Cerrar sesión</h5>
               </NavLink>
               </>
@@ -78,3 +79,4 @@ const CustomNavbar = () => {
 };
 
 export default CustomNavbar;
+
