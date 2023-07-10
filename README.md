@@ -5,6 +5,7 @@
     <li><a href="#sobre-el-proyecto">Sobre el proyecto</a></li>
     <li><a href="#tecnologías-utilizadas"> Tecnologías utilizadas</a></li>
     <li><a href="#estructura-del-proyecto">Estructura del proyecto</a></li>
+    <li><a href="#vistas">Vistas</a></li>
     <li><a href="#funcionalidades-implementadas">Funcionalidades implementadas</a></li>
     <li><a href="#funcionalidades-en-desarrollo">Funcionalidades en desarrollo</a></li>
     <li><a href="#agradecimientos">Agradecimientos</a></li>
@@ -51,6 +52,38 @@ El proyecto sigue la siguiente estructura de carpetas:
 - src/App.jsx: Contiene la configuración de las rutas utilizando React Router Dom.
 - src/Main.jsx: Punto de entrada de la aplicación.
 
+## Vistas
+
+A continuación se pueden ver algunas de las vistas:
+
+### Home
+<img src="/src/assets/homePage.png">
+
+<img src="/src/assets/vistaPrincipalBienvenida.png">  
+
+<img src="/src/assets/vistaPrincipalTratamientos.png"> 
+
+
+### Register
+<img src="/src/assets/registro.png">
+
+### Login
+<img src="/src/assets/login.png">
+
+### Todas las citas como usuario
+<img src="/src/assets/todasLasCitas.png">
+
+### Tratamientos
+<img src="/src/assets/tratamientos.png">
+
+### Ver como doctor todas las citas registradas
+<img src="/src/assets/citasDoctor.png">
+
+### Ver como admin todos los usuarios registrados
+<img src="/src/assets/allUsers.png">
+
+
+
 ## Instalación en local
 
 El proyecto está compuesto tanto de backend como de frontend, por lo que será necesario instalar las dos partes.
@@ -91,7 +124,6 @@ Las siguientes funcionalidades han sido implementadas hasta el momento:
 
 Agradezco a mis compañeros y profesores, que han hecho posible que realice este proyecto:
 
-Profesores:
 
 - **Dani**  
 <a href="https://github.com/Datata" target="_blank"><img src="https://img.shields.io/badge/github-24292F?style=for-the-badge&logo=github&logoColor=red" target="_blank"></a>
