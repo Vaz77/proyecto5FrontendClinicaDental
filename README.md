@@ -6,10 +6,9 @@
     <li><a href="#tecnologías-utilizadas"> Tecnologías utilizadas</a></li>
     <li><a href="#estructura-del-proyecto">Estructura del proyecto</a></li>
     <li><a href="#vistas">Vistas</a></li>
-    <li><a href="#funcionalidades-implementadas">Funcionalidades implementadas</a></li>
-    <li><a href="#funcionalidades-en-desarrollo">Funcionalidades en desarrollo</a></li>
-    <li><a href="#agradecimientos">Agradecimientos</a></li>
     <li><a href="#instalacion-en-local">Instalación en local</a></li>
+    <li><a href="#funcionalidades-implementadas">Funcionalidades implementadas</a></li>
+    <li><a href="#agradecimientos">Agradecimientos</a></li>
   </ol>
 </details>
 
